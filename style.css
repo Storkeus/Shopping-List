@@ -2,6 +2,7 @@
 <html lang="pl">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Shopping list!</title>
         <meta name="description" content="Create your own shopping list! Beauty in simplicity. Useful web application for creating shopping list.">
@@ -14,9 +15,14 @@
     
     <body>
         <div class="container">
-            <div class="row">
-                
-            </div>
+            <nav class="navbar navbar-default">
+                <div class="row navbar-header">
+                    <div class="col-sm-12 font-primary">
+                    Shopping List!
+                    </div>
+
+                </div>
+            </nav>
         </div>
         <style src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></style>
     </body>
