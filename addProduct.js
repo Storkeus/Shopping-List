@@ -10,7 +10,7 @@ $("#addProductForm").submit(function(e) {
             },
             
             succes: function(){
-            listReload();
+            viewList();
         }
         });
     e.preventDefault();
