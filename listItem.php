@@ -11,10 +11,10 @@
         
         private function deleteItem()
         {
-            $require_once('connect.php');
+            require_once('connect.php');
             //code form php.net
             $query="DELETE * FROM `listItems` WHERE `product`='$this->name'";
-            $mysqli=new mysqli(serverName, user, password, database);
+            $mysqli=new mysqli($serverName, $user, $password, $database);
             
             if($mysqli->connect_errno)
             {
@@ -25,22 +25,13 @@
             $result = $mysqli->query($query);
             $result->close();
         }
-        /*private function getAmount()
+        
+        public function getData()
         {
-           $require_once('connect.php');
-            //code form php.net
-            $query="SELECT `amount` FROM `listItems` WHERE `product`='$this->name'";
-            $mysqli=new mysqli(serverName, user, password, database);
+            $dataDiv='<side class="row"><div class="col-xs-6 text-center">'.$this->name.'</div><div class=" text-center col-xs-4">'.$this->amount.'</div><div class="delete col-xs-2 text-danger text-center">[X]</div></side>';
             
-            if($mysqli->connect_errno)
-            {
-                printf("Connect failed: %s\n", $mysqli->connect_error);
-                exit();
-            }
-            
-            $result = $mysqli->query($query);
-            return $result;
-            
-        }*/
+            return $dataDiv;
+        }
+
     }
 ?>

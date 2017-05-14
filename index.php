@@ -39,11 +39,11 @@
                         <form id="addProductForm">
                             <div class="col-xs-8">
                                 <label for="productName">Product:</label>
-                                <input type="text" class="form-control" id="productName" placeholder="Eggs">
+                                <input type="text" class="form-control" id="productName" value="" placeholder="Eggs">
                             </div>
                             <div class="col-xs-4">
                                 <label for="productAmount">Amount:</label>
-                                <input type="number" class="form-control" id="productAmount" placeholder="1">
+                                <input type="number" value="" class="form-control" id="productAmount" placeholder="1">
                             </div>
                             <div class="col-xs-12">
                                 <input type="submit" class="btn btn-block btn-success" value="ADD">

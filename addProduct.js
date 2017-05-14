@@ -9,7 +9,7 @@ $("#addProductForm").submit(function(e) {
                 productAmount: productAmount
             },
             
-            succes: function(){
+            success: function(){
             viewList();
         }
         });

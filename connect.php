@@ -2,5 +2,5 @@
     $serverName="localhost";
     $user="root";
     $password="";
-    $database="shopping-list";
+    $database="shopping_list";
 ?>
