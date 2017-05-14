@@ -3,7 +3,7 @@ $("#addProductForm").submit(function(e) {
         var productAmount=$("#productAmount").val();
     
         $.ajax({
-            url: "/addProduct.php",
+            url: "addProduct.php",
             data:{
                 productName: productName,
                 productAmount: productAmount

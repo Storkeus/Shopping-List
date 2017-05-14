@@ -1,6 +1,6 @@
 function viewList()
 {
-    $.get(viewList.php, function(products)
+    $.get("viewList.php", function(products)
          {
         $("#listItemsContainer").html(products);
     });

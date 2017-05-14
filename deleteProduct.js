@@ -1,7 +1,7 @@
-$(".delete").click(fuction(){
+$(".delete").click(function(){
                    $.ajax({
                    url:"deleteProduct.php",
-                   data: $(this).prev().text();
+                   data:{product: $(this).prev().text()},
                    });
-viewList();
+                    viewList();
                    });
